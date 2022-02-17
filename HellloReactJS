@@ -3,3 +3,26 @@ import reactDom from "react-dom";
 const element= <h1>Hello ReactJS</h1>;
 window.console.log(element);
 reactDom.render(element, document.getElementById('root'));
+
+// React using component to design UI. For exemple: When you want to write a component in the React. Using file JSX to make a component
+ With Simplet React Snipet you can use.
+ imrc tag to make objecct react 
+ import React, { Component } from 'react';
+ cc tag to make class react extend Component
+ class <Class_Name> extends Component {
+ 
+    render() { 
+        return <h1>{this.FormatCounter()}; // Using function into render to show value format;
+    }
+    // Function FormatCounter to format values count
+    FormatCounter(){
+        const {count}= this.state;
+        return count === 0 ? "Zero":count;
+    }
+}
+//To use component you need to open index.js follow:
+import Counter from './components/counter'
+ReactDOM.render(
+  <Class_Name/>, document.getElementById('root')// show value into element contain tag root.
+);
+
