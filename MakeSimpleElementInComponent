@@ -1,0 +1,36 @@
+// To make a element in react you can do easily.
+//For example
+// If you have a constructure HTML bellow.
+<ul>
+  <li>Option 1</li>
+  <li>Option 2</li>
+  <li>Option 3</li>
+  <li>Option 4</li>
+  <li>Option 5</li>
+<ul>
+If you use the react this isue can do very simple by code.
+
+state={
+  tags=["tag1","tag2","tag3","tag4","tag5"]
+};
+render(
+   // Every tag <li> you need to set key. It very important when you use console in the browser.
+)
+
+renderlitags(){
+  this.state.tags.map(tag=><li key={tag}>{tag}</li>);
+}
+// Finally you can show the result into ul tag.
+<ul>
+{this.renderlitags()}
+</ul>
+The result when you view in the browser will see.
+<ul>
+  <li>tag1</li>
+   <li>tag2</li>
+    <li>tag3</li>
+     <li>tag4</li>
+      <li>tag5</li>
+<ul>
+//that's good every one
+
