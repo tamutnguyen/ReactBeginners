@@ -1,0 +1,32 @@
+//To make simple component in React you need to use Simple React Snipet
+// The firt step you need to create a new file into folder Componet with name: <file_name_component>.jsx.
+// The next step you use code between the make a component
+//Input imrc to import React / Component
+import React, { Component } from 'react';
+//And cc import Class Component
+//This one is very important when you want to create a component file in React.
+import Counter from './counter';
+// <Name_Components>: You can make any name you like.
+class  <Name_Components>  extends Component {
+    state = { 
+    }; 
+  
+
+    render() { 
+        return (
+            <div>Hello My first Component in React</div>
+            
+    }
+}
+ 
+export default  <Name_Components>;
+// After you finish to Make a component file. You can view on index.js. By using code bellow.
+import Counter from './components/counter'
+ReactDOM.render(
+  <Counter/>, document.getElementById('root') // Show my first component React into tag root. 
+);
+
+// Finish to make the first component in Racts. 
+//Good luck everyone.
+
+
